@@ -4,63 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lojinha</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-Y84V6T0i2E5o2WvQ22fG08C+8N7l0p8w7r4J9l5cK2m1i5p4o1q2z8s3t4u5v6" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="container">
 
-    <h1>Lojinha da Unidade</h1>
-    <table >
-
-        <thead>
-            <tr>
-                <th>Imagem</th>
-                <th>Produto</th>
-                <th>Preço Unitário</th>
-                <th>Quantidade</th>
-                <th>Total</th>
-                
-            </tr>
-        </thead>
-        
-        <tbody>
-            <tr>
-                <td><img src="img/produto_1.jpeg" alt="produto_1" width="150"></td>
-                <td><div>Celular Top de Linha</div>
-                    <div>Código: 123456</div>
-                    <div>Cor: Branco</div>
-                 </td>
-                <td>3500</td>
-                <td>0</td>
-                <td>0</td>
-                                
-            </tr>
-            <tr>
-                <td><img src="img/produto_2.jpeg" alt="produto_2" width="200"></td>
-                <td><div>Tv Top de Linha</div>
-                    <div>Código: 123486</div>
-                    <div>Cor: Preta</div>
-                 </td>
-                <td>3500</td>
-                <td>0</td>
-                <td>0</td>
-                                
-            </tr>
-
-            <tr>
-                <td><img src="img/produto_3.jpeg" alt="produto_3" width="200"></td>
-                <td><div>Notboock Top de Linha</div>
-                    <div>Código: 123465</div>
-                    <div>Cor: Cinza</div>
-                 </td>
-                <td>3500</td>
-                <td>0</td>
-                <td>0</td>
-                                
-            </tr>
-        </tbody>
-    </table>
-    <footer>
-        <span>Subtotal : R$ 0</span>
-    </footer>
-
+        <h1> <i class="bi bi-currency-dollar"></i> Lojinha da Unidade</h1>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Imagem</th>
+                    <th>Produto</th>
+                    <th>Preço Unitário</th>
+                    <th>Quantidade</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="img/produto_1.jpeg" alt="produto_1" width="150"></td>
+                    <td><div>Celular Top de Linha</div>
+                        <div>Código: 123456</div>
+                        <div>Cor: Branco</div>
+                    </td>
+                    <td>3500</td>
+                    <td>
+                        <span class="badge bg-danger"><i class="bi bi-dash"></i></span>
+                        0
+                        <span class="badge bg-success"><i class="bi bi-plus"></i></span>
+                    </td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td><img src="img/produto_2.jpeg" alt="produto_2" width="200"></td>
+                    <td><div>Tv Top de Linha</div>
+                        <div>Código: 123486</div>
+                        <div>Cor: Preta</div>
+                    </td>
+                    <td>3500</td>
+                    <td>
+                         <span class="badge bg-danger"><i class="bi bi-dash"></i></span>
+                        0
+                        <span class="badge bg-success"><i class="bi bi-plus"></i></span>
+                    </td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td><img src="img/produto_3.jpeg" alt="produto_3" width="200"></td>
+                    <td><div>Notboock Top de Linha</div>
+                        <div>Código: 123465</div>
+                        <div>Cor: Cinza</div>
+                    </td>
+                    <td>3500</td>
+                    <td>
+                         <span class="badge bg-danger"><i class="bi bi-dash"></i></span>
+                        0
+                        <span class="badge bg-success"><i class="bi bi-plus"></i></span>
+                    </td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+        </table>
+        <footer class=" text-center">
+            <span><i class="bi bi-cart-check"></i>Subtotal : R$ 0</span>
+        </footer>
+    </div>
 </body>
 </html>
